@@ -1,7 +1,6 @@
-// Install necessary packages: npm install react react-dom
 
 import React, { useState, useRef, useEffect } from 'react';
-import './App.css'; // Create your own CSS file for styling
+import './App.css';
 import { FaPlayCircle } from "react-icons/fa";
 import { IoPauseCircle } from "react-icons/io5";
 import { BiSolidSkipNextCircle } from "react-icons/bi"
@@ -81,7 +80,7 @@ let handleEnded
     };
   }, [currentTrackIndex, isSeeking]);
 
-  // Cleanup effect
+
   useEffect(() => {
     return () => {
       const audio = audioRef.current;
@@ -126,7 +125,7 @@ let handleEnded
     setPlaybackSpeed(speed);
   };
 
-  // Your array of music tracks
+
   const musicTracks = [
     './1.mp3',
     './2.mp3',
@@ -136,7 +135,6 @@ let handleEnded
     "./6.mp3",
     "./7.mp3",
     "./8.mp3"
-    // Add more tracks as needed
   ];
 
 
